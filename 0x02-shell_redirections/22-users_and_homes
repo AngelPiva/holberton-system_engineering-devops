@@ -1,2 +1,2 @@
 $!/bin/bash
-getent passwd /etc/passwd
+getent passwd | cut -d: -f6 /etc/passwd
