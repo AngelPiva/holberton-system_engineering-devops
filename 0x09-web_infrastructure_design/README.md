@@ -1,0 +1,10 @@
+# 0x09. Web infrastructure design
+
+- Task 0:
+design a one server web infrastructure that hosts the website that is reachable via www.foobar.com. Start your explanation by having a user wanting to access your website.
+
+- Task 1:
+design a three server web infrastructure that hosts the website www.foobar.com.
+
+- Task 2:
+design a three server web infrastructure that hosts the website www.foobar.com, it must be secured, serve encrypted traffic, and be monitored.
