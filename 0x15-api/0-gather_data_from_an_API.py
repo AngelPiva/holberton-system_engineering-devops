@@ -13,8 +13,8 @@ if __name__ == "__main__":
     response_user = requests.get(url_users).json()
     response_todos = requests.get(url_todos).json()
 
-    name = "employee name"
-    for s_name in response_users:
+    name = ""
+    for s_name in response_user:
         if s_name.get("name") == argv[1]:
             name = s_name.get("name")
 
@@ -24,3 +24,5 @@ if __name__ == "__main__":
             tasks_completed.append(tasks.get("title"))
 
     print("Employee {} is done with tasks({}/{}):".format(name, len(tasks_completed), len(response_todos)))
+    for items in tasks_completed:
+        print("\t {}".format(items))
