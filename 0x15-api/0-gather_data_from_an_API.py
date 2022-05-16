@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
     name = ""
     for s_name in response_user:
-        if s_name.get("name") == argv[1]:
+        if s_name.get("id") == int(argv[1]):
             name = s_name.get("name")
 
     tasks_completed = []
