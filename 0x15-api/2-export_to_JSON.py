@@ -21,7 +21,11 @@ if __name__ == "__main__":
     dict = {}
     list = []
     for i in response_todos:
-        list.append(i)
+        in_dict = {}
+        in_dict["task"] = i.get("title")
+        in_dict["completed"] = i.get("completed")
+        in_dict["username"] = username
+        list.append(in_dict)
     dict[argv[1]] = list
 
     with open(file_name, "w") as f:
