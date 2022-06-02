@@ -7,7 +7,8 @@ def top_ten(subreddit):
     """function"""
     url = "https://www.reddit.com/r/" + subreddit + "/hot.json"
     user_agent = {'User-agent': 'Python/requests'}
-    req = requests.get(url, headers=user_agent, params={'limit': 10}, allow_redirects=False)
+    req = requests.get(url, headers=user_agent,
+                       params={'limit': 10}, allow_redirects=False)
     if req.status_code == 200:
         data = req.json().get("data")
         children = data.get("children")
