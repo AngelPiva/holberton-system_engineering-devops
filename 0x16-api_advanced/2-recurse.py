@@ -20,5 +20,4 @@ def recurse(subreddit, list=[], after='', count=0):
         if after is not None:
             return recurse(subreddit, list, after, count)
         return list
-    else:
-        print("None")
+    return None
